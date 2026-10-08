@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glayza Malan | Portfolio</title>
+<meta name="description" content="Portfolio of Glayza D. Malan, BSIT student at PUP Calauan Campus. Networking, web development, and UI design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfafd;--ink:#1d1729;--muted:#6b6478;--line:#e8e4f0;--accent:#6b3fc2;--tint:#f1ebfb;
+--head:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;--body:"Literata",Georgia,serif}
+@media(prefers-color-scheme:dark){:root{--bg:#141019;--ink:#eee9f6;--muted:#a79db9;--line:#2c2540;--accent:#b794f6;--tint:#221a33}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.02rem/1.75 var(--body)}
+a{color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1.15}
+p{margin:0 0 1rem;max-width:62ch}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;height:56px;font-family:var(--head)}
+nav a{color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--accent)}
+nav .logo{font-weight:800}
+nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0}
+.hero{padding:6rem 0 4.5rem}
+.hero h1{font-size:clamp(2.8rem,8vw,5rem);font-weight:800;letter-spacing:-.03em}
+.hero .role{font-family:var(--head);font-size:1.2rem;color:var(--muted);margin:.9rem 0 1.6rem}
+.links{display:flex;gap:1.4rem;flex-wrap:wrap;font-family:var(--head);font-weight:700}
+section{padding:3.5rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:150px 1fr;gap:1rem 2rem}
+section>h2{font-size:1rem;color:var(--muted);font-weight:500}
+.list{list-style:none;margin:0;padding:0}
+.row{padding:1.2rem 0;border-bottom:1px solid var(--line);display:grid;gap:.3rem}
+.row:first-child{padding-top:0}
+.row:last-child{border-bottom:0}
+.row h3{font-size:1.15rem}
+.row .meta{font-size:.88rem;color:var(--muted);margin:0}
+.row p{margin:.2rem 0;color:var(--ink)}
+.row .tags{font-size:.85rem;color:var(--muted)}
+.acts{display:flex;gap:1.1rem;flex-wrap:wrap;font-family:var(--head);font-weight:700;font-size:.95rem;margin-top:.3rem}
+button.view{font:inherit;color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.sub{font-family:var(--head);font-size:1rem;font-weight:700;margin:2rem 0 1rem}
+.sub:first-child{margin-top:0}
+.skills{display:grid;gap:.9rem}
+.skills b{font-family:var(--head);display:inline-block;min-width:9rem}
+.skills span{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--muted);font-size:.9rem}
+dialog{width:min(980px,94vw);height:90vh;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+dialog::backdrop{background:rgba(20,10,35,.55)}
+dialog[open]{display:flex;flex-direction:column}
+.dh{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.8rem 1rem;border-bottom:1px solid var(--line);font-family:var(--head);font-weight:700}
+.dh div{display:flex;gap:1rem;align-items:center}
+.dh button{font:inherit;background:var(--tint);color:var(--accent);border:0;border-radius:8px;padding:.3rem .8rem;cursor:pointer}
+dialog iframe{flex:1;border:0;width:100%}
+@media(max-width:700px){
+  section{grid-template-columns:1fr}
+  .hero{padding:4rem 0 3rem}
+  nav ul{gap:.9rem}
+  nav ul li:nth-child(n+4){display:none}
+  dialog{width:100vw;height:100vh;border-radius:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#top">Glayza Malan</a>
+<ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#documents">Documents</a></li><li><a href="#repos">Repos</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<main id="top" class="wrap">
+<div class="hero">
+<h1>Glayza D. Malan</h1>
+<p class="role">Aspiring network administrator and UI designer</p>
+<p>Third-year Information Technology student at PUP Calauan Campus. I'm working toward a career in network administration, with a designer's eye for clear, usable interfaces.</p>
+<div class="links">
+<a href="https://github.com/glayzamalan00-cloud" target="_blank" rel="noopener">GitHub</a>
+<a href="#documents">Activity documents</a>
+<a href="Resume.pdf" download>Resume.pdf</a>
+</div>
+</div>
+
+<section id="about">
+<h2>About</h2>
+<div>
+<p>Third-Year BSIT Student at PUP Calauan Campus, graduating 2028. Aspiring Network Administrator with experience in 
+Cisco Packet Tracer, subnetting, and router configuration. I combine technical network skills with a designers eye for 
+clear, usable interfaces built in Figma and Canva. Seeking an internship to gain hands-on experience with a 
+professional IT team and contribute to secure, efficient network operations.</p>
+<div class="skills" style="margin-top:1.8rem">
+<div><b>Networking</b><span>Packet Tracer, IP addressing, subnetting, router and switch setup</span></div>
+<div><b>Design</b><span>UI design, visual design, Figma, Canva</span></div>
+<div><b>Programming</b><span>HTML, CSS, JavaScript, C, C#, Java, Python, COBOL, PHP</span></div>
+<div><b>Tools</b><span>Git, GitHub, GitHub Pages, VS Code</span></div>
+</div>
+<h3 class="sub" style="margin-top:2rem">Education</h3>
+<p style="margin:0">BS Information Technology, Polytechnic University of the Philippines, Calauan Campus. Expected 2028[cite: 1].<br>Dean's Lister, 1st and 2nd Year, both semesters (A.Y. 2024–2026).</p>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div id="projectList"></div>
+</section>
+
+<section id="documents">
+<h2>Documents</h2>
+<div>
+<p style="color:var(--muted)">My latest resume. Select View to read it here, or download a copy.</p>
+<div id="docList"></div>
+</div>
+</section>
+
+<section id="repos">
+<h2>GitHub repos</h2>
+<div><ul class="list" id="repoList" aria-live="polite"><li class="row"><span class="meta">Loading repositories…</span></li></ul></div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div>
+<p>Open to IT and network administration internships.</p>
+<p style="margin:0"><a href="mailto:glayzamalan00@gmail.com">glayzamalan00@gmail.com</a><br><a href="https://github.com/glayzamalan00-cloud" target="_blank" rel="noopener">github.com/glayzamalan00-cloud</a></p>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Glayza D. Malan</div></footer>
+
+<dialog id="viewer" aria-label="Document viewer">
+<div class="dh"><span id="vTitle"></span><div><a id="vOpen" href="#" target="_blank" rel="noopener">Open in new tab</a><button id="vClose">Close</button></div></div>
+<iframe id="vFrame" title="Document preview"></iframe>
+</dialog>
+
+<script>
+var GH="https://github.com/glayzamalan00-cloud/";
+var projects=[
+{g:"Networking",items:[
+["Router, Switch, and PCs Setup","2025–26 · Group project, Cisco Packet Tracer","Connected a router, a switch, and two PCs. Set static IPs and gateways, named the switch, and secured it with passwords. Verified with ping.","Router configuration, Switch security"],
+["IPv4 Addressing and Connectivity Tests","2025–26 · Group project, Cisco Packet Tracer","Tested how IP address and subnet mask settings affect communication between two PCs, and explained results that did not match theory.","IPv4, Subnet mask, Troubleshooting"],
+["Subnetting for a Small Campus","2025–26 · DCN activity","Divided 192.168.10.0/24 into four /26 subnets with 62 usable hosts each, including network, usable, and broadcast addresses.","Subnetting, IP planning"],
+["Wired vs Wireless Network Comparison","2025–26 · Group project, Cisco Packet Tracer","Built a wired LAN and a wireless network and compared ping results. The wired network was faster and more stable in the simulation.","LAN, Wireless, Latency"],
+["Network Layer Protocols: ping, tracert, ARP","2025–26 · DCN activity","Followed the path to google.com with ping, tracert, and arp -a, and watched ARP request and reply frames in simulation mode.","IP, ICMP, ARP"]]},
+{g:"Web development and programming",items:[
+["Pokédex (ASP.NET)","2026 · Group project","A Pokédex site with all 151 Generation I Pokémon. Users can create an account, collect Pokémon, build teams, and battle.","C#, ASP.NET Web API, EF Core, SQLite, JWT, JavaScript"],
+["Gen 1 Pokédex (Spring Boot)","2026 · Group project","A Pokémon collection and battle game. Users can catch, level up, evolve, and battle Pokémon.","Java, Spring Boot, MySQL, React, Vite, Tailwind CSS, JWT"],
+["CCC Portal","2026 · Group project, Web development Week 06","Pages for a student information and campus services portal: a routed Laravel Blade site with a shared layout and a reusable alert component.","Laravel, Blade, UI design",GH+"webdev-week06-group4.2"],
+["Products Manager","2026 · Group project, Web development Week 07","A Laravel app on PostgreSQL with a products migration, a controller that lists records, and custom middleware.","Laravel, PostgreSQL, Middleware",GH+"webdev-week07-group4.2"],
+["Student Registration Form","2026 · Group project, Web development Week 04","A PHP form that validates required fields, lists submitted data with foreach, and remembers the user's name with sessions.","PHP, HTML, Sessions",GH+"WebDev_Week04_Assessment"],
+["Jack n Poy","First year · Programming 1","A rock-paper-scissors game in C with single-player and two-player modes, input checks, and replay.","C, Console app",GH+"jacknpoy"]]}];
+
+var docs=[
+{g:"Resume",items:[["Resume","Resume.pdf","My latest resume. Download a copy or read it here."]]}];
+
+var fallback=[["jacknpoy","First-year project: rock-paper-scissors game in C"],["networking-labs","Packet Tracer activities and write-ups"],["WebDev_Week04_Assessment","PHP form processing activity"],["webdev-week06-group4.2","Laravel Blade site"],["webdev-week07-group4.2","Laravel and PostgreSQL products manager"]];
+
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+function link(t,h,ext){var a=el("a","",t);a.href=h;if(ext){a.target="_blank";a.rel="noopener"}return a}
+
+function render(id,groups,fn){var box=document.getElementById(id);groups.forEach(function(g){
+ box.appendChild(el("h3","sub",g.g));var ul=el("ul","list");
+ g.items.forEach(function(i){var li=el("li","row");fn(li,i);ul.appendChild(li)});box.appendChild(ul)})}
+
+render("projectList",projects,function(li,p){
+ li.appendChild(el("h3","",p[0]));li.appendChild(el("p","meta",p[1]));li.appendChild(el("p","",p[2]));
+ li.appendChild(el("p","meta tags",p[3]));
+ if(p[4]){var a=el("div","acts");a.appendChild(link("Code",p[4],true));li.appendChild(a)}});
+
+var dlg=document.getElementById("viewer"),frame=document.getElementById("vFrame");
+function openDoc(t,f){if(navigator.pdfViewerEnabled===false){window.open(f,"_blank");return}document.getElementById("vTitle").textContent=t;
+ var o=document.getElementById("vOpen");o.href=f;frame.src=f+"#view=FitH";dlg.showModal()}
+function closeDoc(){dlg.close()}
+document.getElementById("vClose").onclick=closeDoc;
+dlg.addEventListener("close",function(){frame.src="about:blank"});
+dlg.addEventListener("click",function(e){if(e.target===dlg)closeDoc()});
+
+render("docList",docs,function(li,d){
+ li.appendChild(el("h3","",d[0]));li.appendChild(el("p","",d[2]));
+ var a=el("div","acts"),b=el("button","view","View");b.type="button";
+ b.onclick=function(){openDoc(d[0],d[1])};a.appendChild(b);
+ 
+ var dl=el("button","view","Download");dl.type="button";
+ dl.onclick=function(){
+     var aTag = document.createElement('a');
+     aTag.href = d[1];
+     aTag.download = "Resume.pdf";
+     document.body.appendChild(aTag);
+     aTag.click();
+     document.body.removeChild(aTag);
+ };
+ a.appendChild(dl);
+
+ if(d[3]){var p=link("Packet Tracer file",d[3]);p.setAttribute("download","");a.appendChild(p)}
+ li.appendChild(a)});
+
+var rl=document.getElementById("repoList");
+function showRepos(list){rl.textContent="";list.forEach(function(r){var li=el("li","row");
+ var h=el("h3");h.appendChild(link(r.name,r.url,true));li.appendChild(h);
+ if(r.desc)li.appendChild(el("p","",r.desc));
+ if(r.lang)li.appendChild(el("p","meta",r.lang));rl.appendChild(li)})}
+function useFallback(){showRepos(fallback.map(function(f){return{name:f[0],desc:f[1],url:GH+f[0]}}))}
+fetch("https://api.github.com/users/glayzamalan00-cloud/repos?per_page=100&sort=pushed")
+ .then(function(r){if(!r.ok)throw 0;return r.json()})
+ .then(function(d){if(!d.length)throw 0;showRepos(d.map(function(r){return{name:r.name,desc:r.description,lang:r.language,url:r.html_url}}))})
+ .catch(useFallback);
+
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
